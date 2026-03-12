@@ -54,7 +54,7 @@ header{
 }
 
 .dos{
-    background-color: #F2F2F2;
+    background-color: #c1c1c1;
     height: 1200px;
     display: flex;
     flex-direction: column;
@@ -64,10 +64,51 @@ header{
     padding-left: 20%;
     padding-right: 20%;
 }
-.estudios{
+.estudios {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.estudios-titulo {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.estudios-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-estudio {
+    background-color: #b0b0b0;
+    border: 1px solid #888;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    width: clamp(360px, 35%, 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-estudio h3 {
+    margin: 0;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+}
+
+.card-estudio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 .aptitudes{
     width: 75%;
@@ -85,27 +126,49 @@ header{
 
 .tres{
     background-color: #303030;
-    height: 600px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     color: #F2F2F2;
+    padding-bottom: 30px;
 }
 .proyectos{
-    width: 60%;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 .card{
+    background-color: #606060;
     text-align: center;
-    width: 30%;
-    border: solid #F2F2F2 1px;
+    width: clamp(500px, 65%, 900px);
+    border: solid #000000 1px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card h3 {
+    font-size: 1.4rem;
+}
+.card p {
+    font-size: 1rem;
 }
 .card img{
     width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.card video{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.buttom{
+    border: 0
 }
 .card a, footer a {
     color: white;
